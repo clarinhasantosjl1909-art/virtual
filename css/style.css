@@ -1,0 +1,60 @@
+body {
+    background: #ffe6f2;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.foto-box img {
+    width: 250px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px #ff4d88;
+}
+
+/* Texto do contador */
+.contador h2 {
+    margin-top: 20px;
+    font-size: 22px;
+    color: #ff0066;
+}
+
+#tempo_de_namoro {
+    font-size: 20px;
+    font-weight: bold;
+    color: #cc0052;
+}
+
+/* Corações animados */
+.hearts::before,
+.hearts::after {
+    content: "💗";
+    position: absolute;
+    font-size: 40px;
+    animation: subir 3s infinite ease-in-out;
+}
+
+.hearts::after {
+    left: 60%;
+    animation-delay: 1s;
+}
+
+@keyframes subir {
+    0% { transform: translateY(30px); opacity: 0; }
+    50% { opacity: 1; }
+    100% { transform: translateY(-200px); opacity: 0; }
+}
+
+/* Mensagem */
+.mensagem {
+    color: black;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+}
